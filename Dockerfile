@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing/ bazel \
+RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing/ bazel3 \
     && bazel --version
 # bazel works!
 # Until we do anything that upgrades musl...
